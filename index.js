@@ -74,7 +74,6 @@ const addColor = (color,box) => {
     if(compareColors(firstColor,color)){
         selectedColors.push(color);
     }
-    box.style.background = 'black';
 };
 
 const compareColors = (firstColor,secondColor) => {
