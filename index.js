@@ -63,10 +63,9 @@ const startGame = () => {
     shuffle(colorArr);
 
     gameBlock.innerHTML=colorArr.map((item,index)=>boxTemplate(item,index)).join("");
+
     setTimeout(
-    () => {
-gameBlock.innerHTML=colorArr.map((item,index)=>boxTemplate("black",index)).join("");
-    },4000);
+    () => {gameBlock.innerHTML=colorArr.map((item,index)=>boxTemplate("black",index)).join("");},4000);
 
 gameBlock.addEventListener("click", function(e){
     addColor(colorArr[e.target.id],e.target);
